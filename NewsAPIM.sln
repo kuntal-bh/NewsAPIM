@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewsAPIM", "NewsAPIM\NewsAPIM.csproj", "{1F9D53DE-71E3-4A9D-8A47-B257B23CC155}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{F1875D14-039A-4711-BA0B-1ECAB8483B7F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F9D53DE-71E3-4A9D-8A47-B257B23CC155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F9D53DE-71E3-4A9D-8A47-B257B23CC155}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F9D53DE-71E3-4A9D-8A47-B257B23CC155}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F9D53DE-71E3-4A9D-8A47-B257B23CC155}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1875D14-039A-4711-BA0B-1ECAB8483B7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1875D14-039A-4711-BA0B-1ECAB8483B7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1875D14-039A-4711-BA0B-1ECAB8483B7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1875D14-039A-4711-BA0B-1ECAB8483B7F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0642A1CE-E750-45EE-9648-2D0472722D6A}
+	EndGlobalSection
+EndGlobal

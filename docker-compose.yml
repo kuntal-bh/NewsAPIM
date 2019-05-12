@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  newsapim:
+    image: ${DOCKER_REGISTRY}newsapim
+    build:
+      context: .
+      dockerfile: NewsAPIM/Dockerfile
