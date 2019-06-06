@@ -4,22 +4,40 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using NewsAPIM.Services;
 
 namespace NewsAPIM.Controllers
 {
-    [Authorize]
+   // [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        private readonly IServices _service;
+
+        public ValuesController(IServices service)
+        {
+            _service = service;
+        }
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public async Task<IActionResult> getNewsByCategory()
         {
-            return new string[] { "News1", "News2" };
+            try
+            {
+                var newsArticles = await _service.GetNewsByCategory();
+                return Ok(newsArticles);
+            }
+
+           
+            catch (Exception e)
+            {
+                return StatusCode(500, "Some error has occured");
+            }
+
         }
 
-        
+
 
         // POST api/values
         [HttpPost]
